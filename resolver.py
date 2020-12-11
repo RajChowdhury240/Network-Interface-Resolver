@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import sys, getopt
 
 from impacket.dcerpc.v5 import transport
