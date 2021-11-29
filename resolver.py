@@ -10,14 +10,14 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"ht:",["target="])
     except getopt.GetoptError:
-        print 'IOXIDResolver.py -t <target>'
+        print 'resolver.py -t <target>'
         sys.exit(2)
 
     target_ip = "192.168.1.1"
 
     for opt, arg in opts:
         if opt == '-h':
-            print 'IOXIDResolver.py -t <target>'
+            print 'resolver.py -t <target>'
             sys.exit()
         elif opt in ("-t", "--target"):
             target_ip = arg
